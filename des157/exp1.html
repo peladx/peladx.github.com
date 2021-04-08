@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Experiment Page</title>
+</head>
+
+<body>
+  <h1>Experiment 1</h1>
+  <h2>Hello, please open console to see code</h2>
+  <script>
+    //returns answer to favorite animal, i was trying to work with the uppercase function but i wasnt able to figure out how to use it
+    var householdPet = prompt(`enter a household pet`, "");
+
+    if (householdPet == "dog" || householdPet == "cat" || householdPet == "rat" || householdPet == "hamster" || householdPet == "guinea pig" || householdPet == "bunny") {
+      if (householdPet == "dog" || householdPet == "bunny") {
+        console.log(`hey, ${householdPet}, that's cool, that's my favorite!`)
+      } else if (householdPet == "cat" || householdPet == "rat" || householdPet == "hamster" || householdPet == "guinea pig") {
+        console.log(`you have entered a mammal`).toUpperCase();
+      } else {
+        console.log(`sorry, didn't find that one`).toUpperCase();
+      }
+    }
+  </script>
+
+</body>
+
+</html>

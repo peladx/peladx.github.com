@@ -137,25 +137,12 @@ h1 {
   left: 60px;
 }
 
-/* #dot2 {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: yellow;
-  border: 5px solid #3399ff;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-} */
 #banner:hover div {
-  /* width: 80%; */
   opacity: 1;
   cursor: pointer;
   animation-name: animation2;
   animation-duration: 5s;
   animation-timing-function: linear;
-  /* animation-fill-mode: forwards; */
-  /* animation: animation2 5s linear forwards; */
 }
 
 @keyframes animation2 {
@@ -166,7 +153,6 @@ h1 {
 
   22% {
     left: calc(20px);
-    /* transform: rotateY(95deg); */
     bottom: 70%;
     border-radius: 50%;
     background-color: #FFB6C1;
@@ -175,9 +161,7 @@ h1 {
   }
 
   33% {
-    /* left: calc(33%); */
     left: calc(40px);
-    /* transform: rotateY(45deg); */
     bottom: 70%;
     border-radius: 50%;
     background-color: #E6E6FA;
@@ -186,7 +170,6 @@ h1 {
   }
 
   66% {
-    /* left: calc(66% - 40px); */
     left: calc(60px);
     bottom: 0;
     background-color: #87CEFA;
