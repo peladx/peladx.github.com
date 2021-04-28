@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horoscope Madlib</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Your Horoscope</h1>
+  </header>
+  <article id="madlib">
+    <section id="form">
+      <h2> Please fill the forms out below to get your horoscope!</h2>
+      <form id="myform">
+        <label for="noun1">sun sign:</label>
+        <input type="text" id="noun1" required>
+
+        <label for="adj1"> positive adjective:</label>
+        <input type="text" id="adj1" required>
+
+        <label for="adj2">negative adjective:</label>
+        <input type="text" id="adj2">
+
+        <label for="noun2">name of best friend:</label>
+        <input type="text" id="noun2">
+
+        <label for="noun3">name of famous person:</label>
+        <input type="text" id="noun3">
+
+        <label for="noun4">favorite spot on campus:</label>
+        <input type="text" id="noun4">
+
+        <label for="verb">verb ending in -ing: </label>
+        <input type="text" id="verb">
+
+        <label for="noun5">favorite artist:</label>
+        <input type="text" id="noun5">
+
+
+        <input type="submit" value="send" id="submit">
+
+      </form>
+
+
+    </section>
+
+    <section id="images">
+      <img src="images/tophand.png" id="tophand" alt="tophand" />
+      <img src="images/bottomhand.png" id="bottomhand" alt="bottomhand" />
+      <div id="dot"></div>
+    </section>
+
+    <section id="overlay" class="hidden">
+      <article>
+          <h2> Here's your future...</h2>
+          <p>
+            hey
+          </p>
+          <button class="close">close</button>
+      </article>
+    </section>
+
+  </article>
+  <footer>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://validator.w3.org/check?uri=https://peladx.github.io/des157">Valid HTML 5</a>
+        </li>
+        <li>
+          <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+
+</html>

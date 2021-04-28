@@ -1,32 +1,78 @@
+
 (function(){
-  'use strict';
+  let myForm=document.querySelector('#myform');
+  const madlib=document.querySelector('#madlib');
+  // for(let eachField of formData){
+  //   eachField.value="";
+  // }
+  let myText;
+
+  myForm.addEventListener('submit',function(event){
+    event.preventDefault();
+    const noun1=document.querySelector('#noun1').value;
+    const adj1=document.querySelector('#adj1').value;
+    const adj2=document.querySelector('#adj2').value;
+    const noun2=document.querySelector('#noun2').value;
+    const noun3=document.querySelector('#noun3').value;
+    const verb=document.querySelector('#verb').value;
+    const noun4=document.querySelector('#noun4').value;
+    const noun5=document.querySelector('#noun5').value;
+
+    document.getElementById('overlay').className='showing';
+    const myText=`${noun1}, here is what your future entails:
+
+        you have been deemed ${adj1} by the universe today! So, so far so good.
+
+        You will meet the love of you life at ${noun4}! Unfortunately, they think you’re ${adj2}, though there’s something about ${noun2} that they like....
+
+        ${noun3} would like to go ${verb} and hopes you will ask soon. Hit those dm’s!
+
+        In terms of your recent inquiry, the answer to life is ${noun5}`;
+
+
+    madlib.innerHTML=myText;
+  });
+  // myForm.querySelector('.close').addEventListener('click',function(event){
+  //   event.preventDefault();
+  //   document.getElementById('overlay').className='hidden';
+  // });
+  // myForm.addEventListener('keydown', function(event){
+  //   if(event.key==='Escape'){
+  //     document.getElementById('overlay').className='hidden'
+  //   }
+  // });
 })();
-const myForm=document.querySelector('#myform');
-const madlib=document.querySelector('#madlib');
-const myText;
-if (noun1 && noun2 && adj &&verb){
-  myText=`Here are the words: ${noun1},${noun2},${adj},and${verb}`;
 
-}
-  else{
-    myText="Please give me words so I can mke your Mad Lib!";
 
-  }
-myForm.addEventListener('submit',function(event){
-  event.preventDefault();
-  const noun1=document.querySelector('#noun1').value ='';
-  const noun2=document.querySelector('#noun2').value ='';
-  const adj=document.querySelector('#adj').value ='';
-  const verb=document.querySelector('#verb').value='';
-
-// if (noun1 && noun2 && adj &&verb){
-//   my text=`Here are the words: ${noun1},${noun2},${adj},and${verb}`;
 //
-// }
-//   else{
-//     myText="Please give me words so I can mke your Mad Lib!";
+// (function(){
+//   let myForm=document.querySelector('#myform');
+//   const madlib=document.querySelector('#madlib');
+//   let myText;
 //
-//   }
-
-  madlib.innerHTML=myText;
-});
+//   myForm.addEventListener('submit',function(event){
+//     event.preventDefault();
+//     const noun1=document.querySelector('#noun1').value;
+//     const adj1=document.querySelector('#adj1').value;
+//     const adj2=document.querySelector('#adj2').value;
+//     const noun2=document.querySelector('#noun2').value;
+//     const noun3=document.querySelector('#noun3').value;
+//     const verb=document.querySelector('#verb').value;
+//     const noun4=document.querySelector('#noun4').value;
+//     const noun5=document.querySelector('#noun5').value;
+//
+//     const myText=`${noun1}, here is what your future entails:
+//
+//     you have been deemed ${adj1} by the universe today! So, so far so good.
+//
+//     You will meet the love of you life at ${noun4}! Unfortunately, they think you’re ${adj2}, though there’s something about ${noun2} that they like....
+//
+//     ${noun3} would like to go ${verb} and hopes you will ask soon. Hit those dm’s!
+//
+//     In terms of your recent inquiry, the answer to life is ${noun5}`;
+//
+//
+//     madlib.innerHTML=myText;
+// });
+//
+// }());
