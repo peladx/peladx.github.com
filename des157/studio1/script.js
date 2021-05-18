@@ -20,19 +20,20 @@
 
     overlay = document.getElementById('overlay')
     overlay.className='showing';
-    // const myText=`${noun1}, here is what your future entails:
-    //
-    //     you have been deemed ${adj1} by the universe today! So, so far so good.
-    //
-    //     You will meet the love of you life at ${noun4}! Unfortunately, they think you’re ${adj2}, though there’s something about ${noun2} that they like....
-    //
-    //     ${noun3} would like to go ${verb} and hopes you will ask soon. Hit those dm’s!
-    //
-    //     In terms of your recent inquiry, the answer to life is ${noun5}`;
+    const myText=`${noun1}, here is what your future entails:
+
+        you have been deemed ${adj1} by the universe today! So, so far so good.
+
+        You will meet the love of you life at ${noun4}! Unfortunately, they think you’re ${adj2}, though there’s something about ${noun2} that they like....
+
+        ${noun3} would like to go ${verb} and hopes you will ask soon. Hit those dm’s!
+
+        In terms of your recent inquiry, the answer to life is ${noun5}`;
+
     document.getElementById("result").innerHTML = myText;
     myForm.className="hidden";
-    });
-    document.querySelector('.close').addEventListener('click',function(event){
+  });
+  document.querySelector('.close').addEventListener('click',function(event){
     event.preventDefault();
     overlay.className='hidden';
     myForm.className='showing';
@@ -43,7 +44,7 @@
     //   }
     // });
 
-    
+
   // myForm.querySelector('.close').addEventListener('click',function(event){
   //   event.preventDefault();
   //   document.getElementById('overlay').className='hidden';
