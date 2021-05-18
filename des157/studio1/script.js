@@ -29,10 +29,21 @@
     //     ${noun3} would like to go ${verb} and hopes you will ask soon. Hit those dm’s!
     //
     //     In terms of your recent inquiry, the answer to life is ${noun5}`;
+    document.getElementById("result").innerHTML = myText;
+    myForm.className="hidden";
+    });
+    document.querySelector('.close').addEventListener('click',function(event){
+    event.preventDefault();
+    overlay.className='hidden';
+    myForm.className='showing';
+    });
+    // myForm.addEventListener('keydown', function(event){
+    //   if(event.key==='Escape'){
+    //     document.getElementById('overlay').className='hidden'
+    //   }
+    // });
 
-
-    madlib.innerHTML=myText;
-  });
+    
   // myForm.querySelector('.close').addEventListener('click',function(event){
   //   event.preventDefault();
   //   document.getElementById('overlay').className='hidden';
