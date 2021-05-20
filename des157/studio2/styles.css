@@ -1,94 +1,122 @@
 body {
     font-family: Arial;
     text-align: center;
-    background-image: url('images/tehuacancentro2.png');
+    max-width: 1366px;
+    min-width: 900px;
+    min-height: 768;
+    background-color: white;
+    background-image: url("images/background.png");
     background-repeat: no-repeat;
-    background-position: top left;
-    /* background-attachment:center; */
-    padding-bottom: 1em;
-}
-#container {
-    width: 800px;
-    height: 547px;
-    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  main{
     position: relative;
-    margin: auto;
-}
+    max-width:1366px;
+    padding:2%
+  }
 
-#container div {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-}
+  /* #parqueopen {
+    max-width: 500px;
+  } */
 
-#container img {
-    display: block;
-    position: absolute;
-    transition: all 3s ease;
-}
+  h1{
 
-#topleft {
-    top: 0;
-    left: 0;
-}
+  }
+  #tehuacancentro2{
+    height:500px;
+    width:auto;
+    justify-content: center;
+  }
+    #images{
+      /* background-color:yellow; */
+    }
 
-#topright {
-    top: 0;
-    right: 0;
-}
+    .hidden {
+      display: none;
+    }
 
-#bottomleft {
-    bottom: 0;
-    left: 0;
-}
+    .showing{
+      display: block;
+    }
 
-#bottomright {
-    bottom: 0;
-    right: 0;
-}
+    #parquejuarez {
+        position: fixed;
+        top: 10%;
+        left: 24%;
+        width: 780px;
+        height: 770px;
+    }
+    #parquejuarez:hover{
+      border-color:lime;
+      background-color:red;
+    }
 
-#center {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
+    #church{
+      position:fixed;
+      top: 12%;
+      left: 24%;
+      width: 780px;
+      height: 770px;
+    }
 
-.start {
-    width: 800px;
-    left: 0;
-    top: 0;
-}
+    #portalessketch{
+      position:fixed;
+      top: 11%;
+      left: 24%;
+      width: 780px;
+      height: 770px;
+    }
 
-.topleft,
-.topright,
-.bottomleft,
-.bottomright,
-.center {
-    width: 3768px;
-}
+    #parqueopen {
+        position: absolute;
+        /* background-color: rgba(0,0,0,0.5); */
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        transition-property: opacity, visibility;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+        background-color:red;
+        color: black;
+    }
 
-.topleft {
-    top: 0;
-    left: 0;
-}
+    #parqueopen article {
+        box-sizing: border-box;
+        background-color:#fff;
+        padding: 20px;
+        width: 50vw;
+        height: 80vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 650px;
+        z-index: 100;
+    }
 
-.topright {
-    top: 0;
-    left: -2968px;
-}
 
-.bottomleft {
-    left: 0;
-    top: -2020px;
-}
+    footer {
+      display: flex;
+      justify-content: center;
+      margin-top: 2em;
+      padding: 1em;
+      border-top: 5px lightgray dashed;
+    }
 
-.bottomright {
-    top: -2020px;
-    left: -2968px;
-}
+    footer nav li a {
+      line-height: 1.1em;
+      display: inline-block;
+      text-align: left;
+      padding: .5em;
+      color: #708090;
+      display: inline-block;
+    }
 
-.center {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+    footer a:hover {
+      color: #333;
+      padding: .5em;
+      background-color: #00BFFF;
+    }

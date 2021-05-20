@@ -1,21 +1,29 @@
 (function () {
     'use strict';
-    const container = document.querySelector('div');
-    const theImg = document.querySelector('div img');
-    const percent = container.offsetWidth / 100;
-    let prevLoc = 0;
+    var catedral=document.getElementById("catedral");
+    var portales=document.getElementById("portales");
+    let parque=document.getElementById("parque");
+    var catedralopen = document.getElementById("catedralopen");
+    var portalesopen= document.getElementById("portalesopen");
+    var parqueopen=document.getElementById("parqueopen");
 
-    container.addEventListener('mousemove', reportPos);
-    function reportPos(event) {
-    const mousePosX = Math.ceil((event.clientX - (container.getBoundingClientRect().left)) / percent);
 
-        if (prevLoc !== mousePosX) {
-            let addedPx = mousePosX * 30;
-            theImg.style.width = (800 + addedPx) + 'px';
-            prevLoc = mousePosX;
-            console.log(prevLoc);
-        }
-    }
+
+    //
+    // catedral.addEventListener('mouseover', function(){
+    //   // catedralopen = document.getElementById("catedralopen");
+    //   catedralopen.className='showing';
+    // });
+    //
+    // portales.addEventListener('mouseover', function(){
+    //   // portalesopen = document.getElementById('portalesopen');
+    //   portalesopen.className='showing';
+    // });
+
+    parque.addEventListener('mouseover',function(){
+      // parqueopen =document.getElementById("parqueopen");
+      parqueopen.className='showing';
+    });
 
 
 
