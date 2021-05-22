@@ -1,27 +1,24 @@
 (function(){
   'use strict';
-  var catedral=document.getElementById("catedral");
-  var portales=document.getElementById("portales");
-  var parque=document.getElementById("parque");
-  var catedralopen = document.getElementById("catedralopen");
-  var portalesopen= document.getElementById("portalesopen");
-  var parqueopen=document.getElementById("parqueopen");
-  let close1=document.querySelector(".close1");
-  let close2=document.querySelector(".close2");
-  let close3=document.querySelector(".close3");
+  const catedral=document.getElementById("catedral");
+  const portales=document.getElementById("portales");
+  const parque=document.getElementById("parque");
+  const catedralopen = document.getElementById("catedralopen");
+  const portalesopen= document.getElementById("portalesopen");
+  const parqueopen=document.getElementById("parqueopen");
+  const close1=document.querySelector(".close1");
+  const close2=document.querySelector(".close2");
+  const close3=document.querySelector(".close3");
 
 
+// events for clicking on elements and closing them
 
   parque.addEventListener('click',function(){
-    // parqueopen =document.getElementById("parqueopen");
     parqueopen.className='showing';
-    // parque.className='hidden';
   });
 
   close1.addEventListener('click',function(){
-    // parqueopen =document.getElementById("parqueopen");
     parqueopen.className='hidden';
-    // parque.className='hidden';
   });
 
 
@@ -45,40 +42,3 @@
   })
 
 })();
-
-
-
-
-
-
-
-// (function () {
-//     'use strict';
-//     var catedral=document.getElementById("catedral");
-//     var portales=document.getElementById("portales");
-//     let parque=document.getElementById("parque");
-//     var catedralopen = document.getElementById("catedralopen");
-//     var portalesopen= document.getElementById("portalesopen");
-//     var parqueopen=document.getElementById("parqueopen");
-//
-//
-//
-//     //
-//     // catedral.addEventListener('mouseover', function(){
-//     //   // catedralopen = document.getElementById("catedralopen");
-//     //   catedralopen.className='showing';
-//     // });
-//     //
-//     // portales.addEventListener('mouseover', function(){
-//     //   // portalesopen = document.getElementById('portalesopen');
-//     //   portalesopen.className='showing';
-//     // });
-//
-//     parque.addEventListener('mouseover',function(){
-//       // parqueopen =document.getElementById("parqueopen");
-//       parqueopen.className='showing';
-//     });
-//
-//
-//
-// })();
