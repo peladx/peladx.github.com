@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
   main{
     position: relative;
@@ -53,7 +56,7 @@
         #parque{
             position: absolute;
             top: 53.5%;
-            left: 35%;
+            left: 33%;
 
         }
         #parque:hover{
@@ -108,7 +111,7 @@
         #catedral{
           position: absolute;
           top: 15.5%;
-          left: 16.5%;
+          left: 13.5%;
         }
         #catedral:hover{
           border: 10px solid deepSkyBlue;
