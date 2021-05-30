@@ -76,13 +76,13 @@ function throwDice(){
     Oh snap! Snake Eyes!
     </p>`;
     gameData.score[gameData.index]=0;
-    gameData.index ? (gameData.index=0) : (gameData.index=1);
+    gameData.index ? (gameData.index=0): (gameData.index=1);
     setTimeout(setUpTurn,2000);
     showCurrentScore();
 
   }
   else if (gameData.roll1===1||gameData.roll2===1){
-    gameData.index ? (gameData.index=0):(gameData.index=1);
+    gameData.index ? (gameData.index=0)`<p>:</p>`(gameData.index=1);
     game.innerHTML+=`<p>Sorry, one of your rolls was a one, switching to ${gameData.players[gameData.index]}
     </p>`;
     setTimeout(setUpTurn,2000);
