@@ -8,6 +8,8 @@ body {
     overflow-y: hidden;
     margin-left:20%;
     margin-right:auto;
+    height: 1366px;
+    width: 768px;
 }
 
 #instructions{
