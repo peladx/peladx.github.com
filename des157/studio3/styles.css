@@ -10,7 +10,7 @@ body {
     margin-right:auto;
     height: 1366px;
     width: 768px;
-    font-size:18px;
+    font-size:25px;
 }
 
 #instructions{
@@ -22,7 +22,8 @@ body {
 
 
 h1 {
-    font-size: 60px;
+    font-size: 130px;
+    line-height:1em;
     font-weight: 700;
     text-align:center;
     color: hotpink;
@@ -50,7 +51,7 @@ h2 {
 }
 
 p{
-  font-size:18px;
+  font-size:25px;
   font-style:helvetica;
 }
 
@@ -106,7 +107,7 @@ button {
 #startgame {
   font-size:60px;
     display:inline;
-    height:1100px;
+    height:1366px;
     background-color:limegreen;
     font-family:'Titan One', sans-serif;
     letter-spacing: 0.2em;
@@ -145,10 +146,12 @@ button {
     bottom:10px;
     left:10px;
     font-size:40;
+    font-family:'Titan One', sans-serif;
 }
 
 strong{
     color: blue;
+    margin:auto;
 }
 
 
