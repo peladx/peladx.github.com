@@ -1,20 +1,46 @@
-body {
-	font-family: Arial;
-	color: #FFF;
-	padding-top: 200px;
-  position: flex;
-  display:flex;
-  background-color:black;
+h1{
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 140px;
 }
 
-#time{
-  width:300%
+h2{
+    line-height: 1px;
 }
 
-#first h1{
-  justify-content:left;
-  top:0;
+article{
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-bottom: 50px;
+    width: 550px;
+}
 
+div > #container{
+    height: 1366px;
+    width: 768px;
+}
+
+body{
+    padding-left: 350px;
+    padding-top: 170px;
+}
+
+p{
+    line-height: 30px;
+}
+
+
+a{
+    color: black;
+}
+
+
+footer{
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+}
+
+footer a{
+    padding-right: 110px;
 }
 
 #timeline{
@@ -30,14 +56,18 @@ body {
 
 
 .line{
-  height:50px;
+  height:200px;
   width:10px;
+  background-color:darkgrey;
+  padding-left:10%
 }
 .square{
+  display:flex;
   width:10px;
   height:10px;
   background-color:grey;
-  padding:2%;
+  margin-left: 10%;
+  padding:10%;
 }
 
 .square.over{

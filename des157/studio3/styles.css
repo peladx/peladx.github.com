@@ -1,0 +1,171 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    padding: 30px;
+    background: white;
+    color:blue;
+    line-height: 2.5em;
+    height: 100vh;
+    overflow-y: hidden;
+    margin-left:20%;
+    margin-right:auto;
+}
+
+#instructions{
+  background-color:orangered;
+  justify-content: center;
+  color:white;
+  font-family:'Titan One', sans-serif;
+}
+
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align:center;
+    color: hotpink;
+    font-family:'Titan One', sans-serif;
+}
+
+h2 {
+    padding: 15px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.showing{
+    display: block;
+    color:orangered;
+}
+
+
+.close1{
+    background-color:hotpink;
+    font-size:!8px;
+}
+
+p{
+  font-size:18px;
+  font-style:helvetica;
+}
+
+
+
+img {
+    width: 20%;
+    margin: 15px 0 15px 0;
+}
+
+section {
+    margin: auto;
+    width: 60%;
+    height: 390px;
+    border-radius: 20px;
+    background-color: rgb(240, 248, 255, .1);
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+button {
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: limegreen;
+    transition: 300ms;
+    font-size:18px;
+}
+
+#game{
+  background-color:limegreen;
+}
+#game,
+#actions {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    color: black;
+    background-color: limegreen;
+}
+
+#gamecontrol{
+  position: absolute;
+  left:0;
+  top:0;
+  height:900px;
+  color:blue;
+
+}
+
+#startgame {
+  font-size:60px;
+    display:inline;
+    height:1100px;
+    background-color:limegreen;
+    font-family:'Titan One', sans-serif;
+    letter-spacing: 0.2em;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+
+}
+
+#score {
+    width: 7%;
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 275px;
+    position:absolute;
+    top:0;
+    left:0;
+    color:white;
+    background-color:limegreen;
+}
+
+
+#rollagain{
+  background-color:blue;
+}
+#pass{
+  background-color:hotpink;
+}
+
+
+
+
+#quit {
+    margin-left: 15px;
+    background-color:orangered;
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    font-size:40;
+}
+
+strong{
+    color: blue;
+}
+
+
+a{
+    color: blue;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  padding: 1em;
+  border-top: 5px lightgray dashed;
+}
+
+  a:hover {
+  color: #333;
+  padding: .5em;
+  background-color: #00BFFF;
+}
