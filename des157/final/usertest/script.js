@@ -1,5 +1,12 @@
 (function () {
     'use strict';
+
+  alert("Hello, welcome to my final project.")
+  alert(  "I apologize for the missing content; I am still working on my assignment. Please let me know:"+
+    "1.If there are any elements out of alignment"+
+    "2.If any of the javascript/eventlisteners aren't working"+
+    "3. Any feedback/help with code! Or design feedback :)"
+   );
     const squares = document.querySelectorAll('.square');
 
 
@@ -10,25 +17,25 @@
       eachLink.addEventListener('click',smoothScroll);
     });
 
-    const counters=document.querySelectorAll('.counter');
-
-    counters.forEach(counter=>{
-      counter.innerText='0';
-
-      const updateCounter=()=>{
-        
-        const target=+counter.getAttribute('data-target');
-         const c =+counter.innerText;
-         // const increment=target/500;
-         if(c<target){
-          counter.innerText=c+1;
-          setTimeout(updateCounter,1);
-        }else{
-          counter.innerText=target;
-        }
-      };
-      updateCounter;
-    });
+    // const counters=document.querySelectorAll('.counter');
+    //
+    // counters.forEach(counter=>{
+    //   counter.innerText='0';
+    //
+    //   const updateCounter=()=>{
+    //
+    //     const target=+counter.getAttribute('data-target');
+    //      const c =+counter.innerText;
+    //      // const increment=target/500;
+    //      if(c<target){
+    //       counter.innerText=c+1;
+    //       setTimeout(updateCounter,1);
+    //     }else{
+    //       counter.innerText=target;
+    //     }
+    //   };
+    //   updateCounter;
+    // });
 
     function smoothScroll(event){
       event.preventDefault();
