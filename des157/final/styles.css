@@ -96,12 +96,13 @@ strong{
 #first {
   display:flex;
 
-  margin-left:15%;
-	max-width: 100%;
+  margin-left:14%;
+  max-width: 80%;
   padding:0px;
   flex-direction:column;
 /*   margin-right:5px; */
   justify-content:space-evenly;
+  margin-top:1%;
 }
 
 #first p{
@@ -135,34 +136,33 @@ article{
 }
 
 .leftside{
-  width:50%;
-  margin-left:50px;
+  width:40%;
+  margin-left:20%;
   height:50%
 }
 
 .rightside{
-  width:100%;
+  width:50%;
   height:100vh;
   font-size:18px;
 
 }
 
 
-/*************** Navigation Styles ***************/
 #squares{
    width: 100px;
    display: flex;
+   height:100%;
    flex-direction: column;
 /*    align-items: center; */
-   justify-content: center;
-   position:absolute;
-   top:10%;
-   left: 1.6%;
+   justify-content: flex-end;
    position:fixed;
+   bottom:16%;
+   left: 1.6%;
 }
 
 #squares div{
-	margin-bottom:100px;
+	margin-bottom:73%;
 
 }
 .square {
@@ -241,12 +241,4 @@ nav ul{
   color: white;
   font-size:2em;
 
-}
-
-
-
-@media only screen and (min-width: 1000px) {
-	section, nav {
-		width: 960px;
-	}
 }
