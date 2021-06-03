@@ -5,7 +5,7 @@ body {
     color:blue;
     line-height: 2.5em;
     height: 100vh;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     margin-left:20%;
     margin-right:auto;
     height: 1366px;

@@ -1,93 +1,298 @@
+{
+	  box-sizing: border-box;
+}
+
 body{
-  display: flex;
-  flex-direction:column;
-  text-align:left;
-  max-width: 1366px;
-  min-width:768;
-  align-items:center;
-  margin:auto;
-  width:900px;
-  background-color:Cornsilk;
 
-}
-
-header{
-  text-align: center;
-  width: 1366px;
-  font-size:2em;
-}
-
-#summary{
-  background-color:MediumAquaMarine;
-  width:1366px;
-
-}
-
-#summary h2{
+	height:100vh; */
+	max-width: 1366px;
+	max-height:766px;
+	background-color:#2E2E2E;
   color:white;
-  text-align:center;
+	display: block;
 }
 
-#summary article{
-  width:900px;
-  text-align: left;
-  padding-left:230px;
+h1{
+  font-size:1.5em;
 }
 
 
 
-#writing{
+#images{
   position: relative;
-  column-count:2;
-  column-gap: 60px;
-  display: inline-block;
-  padding:2%;
-  width:900px;
+  /* width: 250px;
+  height: 250px; */
+  margin:2px;
+  margin-right:10px;
 }
 
-h2{
-  font-size: 2em;
-  color: LightCoral;
+
+#images img{
+  /* position:absolute; */
+  /* left:0; */
 }
 
-a{
+#images img.top{
+  -webkit-animation-name:FadeInOut;
+  -webkit-animation-timing-function:ease-in-out;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-duration:3s;
+  -webkit-animation-direction:alternate;
+}
+
+#images img.bottom{
+  -webkit-animation-name:Fade;
+  -webkit-animation-timing-function:ease-in-out;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-duration:3s;
+  -webkit-animation-direction:alternate;
+}
+
+#images img.middle{
+  -webkit-animation-name:FadeOutIn;
+  -webkit-animation-timing-function:ease-in-out;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-duration:3s;
+  -webkit-animation-direction:alternate;
+}
+
+@keyframes FadeInOut{
+  0%{opacity:1;}
+  /* 25%{opacity:1;} */
+  50%{opacity:0;}
+  /* 75%{opacity:0;} */
+  100%{opacity:0;}
+}
+
+@keyframes FadeOutIn{
+  0%{opacity:0;}
+  /* 25%{opacity:;} */
+  50%{opacity:1;}
+  /* 75%{opacity:1;} */
+  100%{opacity:0;}
+}
+
+@keyframes Fade{
+  0%{opacity:0;}
+  /* 25%{opacity:0;} */
+  50%{opacity:0;}
+  /* 75%{opacity:1;} */
+  100%{opacity:1;}
+}
+
+
+
+ p {
+	line-height: 1em;
+  font-size:.75em;
+}
+
+strong{
+    color: deepSkyBlue;
+    margin:auto;
+}
+
+#first {
+  display:flex;
+	max-width: 100%;
+  padding:20px;
+  flex-direction:column;
+  margin-right:85px;
+  justify-content:space-evenly;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  font-size: 40px;
+  font-weight: 100;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+	margin: 0 auto 150px auto;
+	/* padding: 25px; */
+/* 	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75); */ */
+}
+
+article{
+  display:flex;
+  flex-direction:row;
+  margin:auto;
+}
+
+.leftside{
+  width:50%;
+  margin-left: 40px;
+}
+
+.rightside{
+  width:50%;
+  height:100vh;
+  font-size:18px;
+
+}
+
+
+/*************** Navigation Styles ***************/
+#squares{
+   width: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position:absolute;
+   top:50px;
+   left:-10px;
+   position:fixed;
+}
+
+#squares div{
+	margin-bottom:100px;
+
+}
+.square {
+   width: 10px;
+   height: 10px;
+   background-color: gray;
+   margin: 10px;
+}
+.square.focus {
+   background-color: crimson;
+   width:1em;
+   height:1em;
+}
+
+
+#timeline{
+/*   min-height: 100vh; */
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color:#D3D3D3;
   position: relative;
-  right: 10%;
-  padding: 2%;
-  text-decoration: none;
-  color:MediumAquaMarine;
+}
+
+.timeline_wrapper {
+  position: fixed;
+   height: 100%;
+   padding: 0px;
+   bottom: 60%;
+
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: flex-end;
+
+}
+
+
+nav ul li {
+  content: '';
+/*       display: block; */
+      border-left: 2px solid white;
+      border-top: 2px solid white;
+      height: 40%;
+      width: 20px;
+}
+
+
+nav li a {
+    text-decoration: none;
+	display: block;
+	color:#A9A9A9;
+	text-transform: uppercase;
+/* 	font-weight: bold; */
+	padding: 2px;
+/* 	background: #9C9C9C; */
+	white-space: nowrap;
+/* 	overflow: hidden; */
+	text-align: center;
+
+  transition: all 0.15s ease-out;
 }
 
 a:hover{
-  background-color:DarkOrange;
+  background-color: transparent;
+  padding-left: 1em;
 }
 
-img:hover{
-  background-color:DarkOrange;
+nav ul{
+	list-style-type:none;
 }
 
-footer{
-  background-color:MediumAquaMarine;
-  width: 1366px;
-  display: flex;
-  justify-content: center;
-  margin-top: 2em;
-  /* padding: 1em; */
-}
-
-footer nav{
-  line-height: 1.1em;
-  display: inline-block;
-  text-align: left;
-  padding: .5em;
-  color: #708090;
+.selected {
+  position: relative;
+  padding:20px;
+  transition: all 0.3s ease-out;
+  margin-bottom: 1em;
+  color: white;
+  font-size:2em;
 
 }
 
 
-footer nav ul li a{
-  list-style-type:none;
-  text-decoration:none;
-  color:white;
-  font:1.5em;
+/* @media only screen and (min-width: 700px) {
+
+	/*************** Frist Section Styles ***************/
+/* 	article {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	#first article img {
+		margin-left: 25px;
+	} */
+
+	/*************** Second Section Styles ***************/
+/* 	#second div, #fifth div {
+		display: flex;
+		justify-content: space-between;
+	} */
+
+/* 	#second article {
+		display:flex;
+    align-items:flex-start;
+	}
+ */
+	/*************** Third Section Styles ***************/
+/* 	#third article {
+		display: flex;
+		align-items: flex-start;
+	} */
+/*
+	#third article img {
+		margin-right: 25px;
+	}
+ */
+/*   #fourth article{
+    display: flex;
+    align-items: flex-start;
+  } */
+
+/*   #fourth article img{
+    margin-right:25px;
+  } */
+	/*************** Fifth Section Styles ***************/
+/* 	#fifth article {
+    display: flex;
+    align-items: flex-start;
+	} */
+/*
+  #fifth article img{
+    margin-right:25px;
+  } */
+/*
+	#sixth article{
+    display: flex;
+    align-items: flex-start;
+		margin-bottom: 100px;
+	} */
+/*   #sixth article img{
+    margin-right:25px;
+  } */
+
+
+@media only screen and (min-width: 1000px) {
+	section, nav {
+		width: 960px;
+	}
 }

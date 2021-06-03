@@ -26,20 +26,6 @@ h1{
   margin-right:10px;
 }
 
-/* #images {
-  position: relative;
-  height:250px;
-  /* background-color:red; */
-  /* width: 250px;
-  animation-name: animation1;
-  animation-duration: 6s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-} */
 
 #images img{
   /* position:absolute; */
@@ -95,55 +81,6 @@ h1{
 }
 
 
-/*
- #images div.secimg{
-  opacity:1;
-  background-image: url(images/woman.png);
-}
-#images div.firstimg{
-  -webkit-animation:anim 11s infinite alternate;
-  animation:anim 11s infinite alternate; */
-
-}
-
-/* @keyframes animation1 {
-  0% {
-    fill:url(images/doctor.png);
-
-  }
-/*
-  12% {
-    background-color: #FFFACD;
-  }
-
-  22% {
-    background-color: #FFFFF0;
-  } */
-
-  /* 34% {
-    /* left: calc(33%); */
-    /* transform: rotateY(45deg); */
-    /* content: url(images/kids.png);
-  }
-
-  /* 54% {
-    background-color: #9370DB;
-  } */
-
-  /* 66% {
-    /* left: calc(66% - 40px); */
-    /* content: url(images/woman.png);
-  } */
-
-  /* 78% {
-    background-color: #87CEFA
-  }
-
-  100% {
-    background-color: #F5FFFA;
-  } */
-
-
 
  p {
 	line-height: 1em;
@@ -160,6 +97,7 @@ strong{
 	max-width: 100%;
   padding:20px;
   flex-direction:column;
+  margin-right:85px;
 
 }
 
@@ -185,6 +123,7 @@ article{
 
 .leftside{
   width:50%;
+  margin-left: 40px;
 }
 
 .rightside{
@@ -203,7 +142,7 @@ article{
    align-items: center;
    justify-content: center;
    position:absolute;
-   top:150px;
+   top:50px;
    left:-10px;
    position:fixed;
 }
@@ -242,60 +181,26 @@ article{
    display: flex;
    flex-flow: column nowrap;
    justify-content: flex-end;
-/*    margin: 0 0 100px 30px; */
-
- /* used to be nav */
-	/* width: 95%;
-	margin: auto; */
 }
-/*
-nav ul {
-  position: fixed;
-   height: 100%;
-   padding: 30px;
-
-   display: flex;
-   flex-flow: column nowrap;
-   justify-content: flex-end;
-} */
 
 nav ul li {
 
-	/* width: 20%;
-	box-sizing: border-box;
-	border-left: 2px solid #666; */
   content: '';
 /*       display: block; */
       border-left: 2px solid white;
       border-top: 2px solid white;
-      height: 50%;
+      height: 40%;
       width: 20px;
-/*       position: absolute; */
-/*       left: 40px;
-      top: 300px;
- */
 }
-
-/* nav ul li:first-of-type{
-	border-left: none;
-} */
 
 nav li a {
     text-decoration: none;
 	display: block;
 	color:#A9A9A9;
 	text-transform: uppercase;
-/* 	font-weight: bold; */
-	padding: 10px;
-/* 	background: #9C9C9C; */
+	padding: 2px;
 	white-space: nowrap;
-/* 	overflow: hidden; */
 	text-align: center;
-	text-overflow: ellipsis; */
-
-
-/*     padding: 5px; */
-/*   padding-bottom:20%; */
   transition: all 0.15s ease-out;
 }
 
@@ -315,457 +220,72 @@ nav ul{
   margin-bottom: 1em;
   color: white;
   font-size:2em;
-
-/* 	background: rgba(254,0,187,1.00); */
-	/* transition: all 1s; */
-}
-
-
-@media only screen and (min-width: 700px) {
-
-	/*************** Frist Section Styles ***************/
-	article {
-		display: flex;
-		align-items: flex-start;
-	}
-
-	#first article img {
-		margin-left: 25px;
-	}
-
-	/*************** Second Section Styles ***************/
-	#second div, #fifth div {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	#second article {
-		display:flex;
-    align-items:flex-start;
-	}
-
-	/*************** Third Section Styles ***************/
-	#third article {
-		display: flex;
-		align-items: flex-start;
-	}
-
-	#third article img {
-		margin-right: 25px;
-	}
-
-  #fourth article{
-    display: flex;
-    align-items: flex-start;
-  }
-
-  #fourth article img{
-    margin-right:25px;
-  }
-	/*************** Fifth Section Styles ***************/
-	#fifth article {
-    display: flex;
-    align-items: flex-start;
-	}
-
-  #fifth article img{
-    margin-right:25px;
-  }
-
-	#sixth article{
-    display: flex;
-    align-items: flex-start;
-		margin-bottom: 100px;
-	}
-  #sixth article img{
-    margin-right:25px;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-	section, header nav {
-		width: 960px;
-	}
-}
-
-
-
-
-
-
-
-
-/* #timeline{
-  min-height: 100vh;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-  color: #fff;
-  position: relative;
-}
-
-section{
-  height: 100vh;
-  font-size: 40px;
-  font-weight: 100;
-  background-color: #22A7F0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-li {
-    position: relative;
-    transition: all 0.3s ease-out;
-    margin-bottom: 1em;
-  }
-
-a {
-    display: block;
-    padding: 0;
-    color: #fff;
-    transition: all 0.15s ease-out;
-  }
-
-a:hover {
-           background-color: transparent;
-           padding-left: 1em
-} */
-/* body {
-	font-family: Arial;
-	color: #333;
-	padding-top: 200px;
-} */
-
-/* header {
-	background:rgba(217,217,217,0.9);
-	width: 100%;
-	position: fixed;
-	top: 0;
-	height: 160px;
-} */
-
-/* header h1 {
-	text-align: center;
-} */
-
-/* p {
-	line-height: 1.5em;
-}
-
-img {
-	display: block;
-	max-width: 100%;
-}
-
-section {
-  height: 100vh;
-  font-size: 40px;
-  font-weight: 100;
-  background-color: #22A7F0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-	/* width: 95%;
-	margin: 0 auto 150px auto;
-	padding: 25px;
-	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75); */
-}
-
-/*************** Navigation Styles ***************/
-
-/* #timeline{
-  min-height: 100vh;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-  color: #fff;
-  position: relative;
-}
-
-.timeline_wrapper {
-  position: fixed;
-   height: 100%;
-   padding: 30px;
-
-   display: flex;
-   flex-flow: column nowrap;
-   justify-content: flex-end;
-   margin: 0 0 100px 30px;
- /* used to be nav */
-	/* width: 95%;
-	margin: auto; */
-/* }
-
-nav ul {
-  position: fixed;
-   height: 100%;
-   padding: 30px;
-
-   display: flex;
-   flex-flow: column nowrap;
-   justify-content: flex-end;
-}
-
-nav ul li {
-	/* width: 20%;
-	box-sizing: border-box;
-	border-left: 2px solid #666; */
-  /* content: '';
-      display: block;
-      border-left: 2px solid white;
-      border-top: 2px solid white;
-      height: 250px;
-      width: 20px;
-      position: absolute;
-      left: -30px;
-      top: 15px;
-
-} */
-
-/* nav ul li:first-of-type{
-	border-left: none;
-} */
-
-/* nav ul li a { */
-	/* text-decoration: none;
-	display: block;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: bold;
-	padding: 10px;
-	background: #9C9C9C;
-	white-space: nowrap;
-	overflow: hidden;
-	text-align: center;
-	text-overflow: ellipsis; */
-  /* display: block;
-  padding: 0;
-  color: #fff;
-  transition: all 0.15s ease-out;
-}
-a:hover{
-  background-color: transparent;
-  padding-left: 1em
-} */
- */
-
-/* .selected {
-  position: relative;
-  transition: all 0.3s ease-out;
-  margin-bottom: 1em;
-
-	background: rgba(254,0,187,1.00);
-	/* transition: all 1s; */
 }
 
 
 /* @media only screen and (min-width: 700px) {
 
 	/*************** Frist Section Styles ***************/
-	/* #first article {
+/* 	article {
 		display: flex;
 		align-items: flex-start;
 	}
 
 	#first article img {
 		margin-left: 25px;
-	} */  */ */
+	} */
 
 	/*************** Second Section Styles ***************/
-	/* #second div, #fifth div {
+/* 	#second div, #fifth div {
 		display: flex;
 		justify-content: space-between;
-	}
+	} */
 
-	#second article {
-		width: 30%;
+/* 	#second article {
+		display:flex;
+    align-items:flex-start;
 	}
-
+ */
 	/*************** Third Section Styles ***************/
-	/* #third article {
+/* 	#third article {
 		display: flex;
 		align-items: flex-start;
-	}
-
+	} */
+/*
 	#third article img {
 		margin-right: 25px;
 	}
+ */
+/*   #fourth article{
+    display: flex;
+    align-items: flex-start;
+  } */
 
+/*   #fourth article img{
+    margin-right:25px;
+  } */
 	/*************** Fifth Section Styles ***************/
-	/* #fifth article {
-		width: 47%;
-	}
+/* 	#fifth article {
+    display: flex;
+    align-items: flex-start;
+	} */
+/*
+  #fifth article img{
+    margin-right:25px;
+  } */
+/*
+	#sixth article{
+    display: flex;
+    align-items: flex-start;
+		margin-bottom: 100px;
+	} */
+/*   #sixth article img{
+    margin-right:25px;
+  } */
 
-	#fifth {
-		margin-bottom: 500px;
-	}
-}
 
 @media only screen and (min-width: 1000px) {
-	section, header nav {
+	section, nav {
 		width: 960px;
 	}
-} */ */ */
- */
-
-
-
-
-
-
-
-
-
-
-
-
-/* h1{
-    font-family: 'Noto Sans JP', sans-serif;
-    line-height: 140px;
 }
-
-h2{
-    line-height: 1px;
-}
-
-article{
-    font-family: 'Noto Sans JP', sans-serif;
-    padding-bottom: 50px;
-    width: 550px;
-}
-
-div > #container{
-    height: 1366px;
-    width: 768px;
-}
-
-body{
-    padding-left: 350px;
-    padding-top: 170px;
-}
-
-p{
-    line-height: 30px;
-}
-
-
-a{
-    color: black;
-}
-
-
-footer{
-    color: black;
-    font-family: 'Noto Sans JP', sans-serif;
-    display: flex;
-}
-
-footer a{
-    padding-right: 110px;
-}
-
-#timeline{
-  width:100px;
-  flex-direction:column;
-  align-items:center;
-  justify-content:left;
-  margin:auto;
-  position:absolute;
-  height:200px;
-  left:0px;
-}
-
-
-.line{
-  height:200px;
-  width:10px;
-  background-color:darkgrey;
-  padding-left:10%
-}
-.square{
-  display:flex;
-  width:10px;
-  height:10px;
-  background-color:grey;
-  margin-left: 10%;
-  padding:10%;
-}
-
-.square.over{
-  background-color: red;
-}
-
-
-p {
-	line-height: 1.5em;
-}
-
-img {
-	display: block;
-	max-width: 100%;
-}
-
-section {
-	width: 95%;
-	margin: 0 auto 150px auto;
-	padding: 25px;
-	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
-} */
-
-
-
-
-
-
-/* .selected {
-	background: rgba(254,0,187,1.00);
-	transition: all 1s;
-}
-
-
-@media only screen and (min-width: 700px) {
-
-	/*************** Frist Section Styles ***************/
-	/* #first article {
-		display: flex;
-		align-items: flex-start;
-	}
-
-	#first article img {
-		margin-left: 25px;
-	}
-
-	/*************** Second Section Styles ***************/
-	/* #second div, #fifth div {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	#second article {
-		width: 30%;
-	}
-
-	/*************** Third Section Styles ***************/
-	/* #third article {
-		display: flex;
-		align-items: flex-start;
-	}
-
-	#third article img {
-		margin-right: 25px;
-	}
-
-	/*************** Fifth Section Styles ***************/
-	/* #fifth article {
-		width: 47%;
-	}
-
-	#fifth {
-		margin-bottom: 500px;
-	}
-}
-
-@media only screen and (min-width: 1000px) {
-	section, header nav {
-		width: 960px;  */
