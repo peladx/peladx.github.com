@@ -1,6 +1,5 @@
 body {
     font-family: 'Helvetica', sans-serif;
-    padding: 30px;
     background: white;
     color:blue;
     line-height: 2.5em;
@@ -22,7 +21,7 @@ body {
 
 
 h1 {
-    font-size: 130px;
+    font-size: 60px;
     line-height:1em;
     font-weight: 700;
     text-align:center;
@@ -31,7 +30,8 @@ h1 {
 }
 
 h2 {
-    padding: 15px;
+    padding: 1px;
+    font-size:18px;
 }
 
 
@@ -40,21 +40,23 @@ h2 {
 }
 
 .showing{
-    display: block;
+    display:inline;
     color:orangered;
-    width: 1200px;
-    line-height:1.5em;
+    width: 40%;
+    line-height:1em;
 }
 
 
 .close1{
     background-color:hotpink;
-    font-size:!8px;
+    font-size:18px;
 }
 
 p{
-  font-size:25px;
+  font-size:15px;
   font-style:helvetica;
+  width:60%;
+  line-height:2em;
 }
 
 
@@ -90,9 +92,9 @@ button {
 }
 #game,
 #actions {
-    text-align: center;
+    text-align: left;
     margin: auto;
-    width: 60%;
+    width: 30%;
     color: black;
     background-color: limegreen;
 }
@@ -101,15 +103,14 @@ button {
   position: absolute;
   left:0;
   top:0;
-  height:900px;
+  height:760px;
   color:blue;
 
 }
 
 #startgame {
-  font-size:60px;
-    display:inline;
-    height:1366px;
+  font-size:30px;
+    height:768px;
     background-color:limegreen;
     font-family:'Titan One', sans-serif;
     letter-spacing: 0.2em;
@@ -145,7 +146,7 @@ button {
     margin-left: 15px;
     background-color:orangered;
     position:absolute;
-    bottom:10px;
+    bottom:150px;
     left:10px;
     font-size:40;
     font-family:'Titan One', sans-serif;
@@ -160,16 +161,15 @@ strong{
 a{
     color: blue;
     text-decoration: none;
-    padding: 0 5px;
 }
 
 
 footer {
-  display: flex;
   justify-content: center;
-  margin-top: 2em;
-  padding: 1em;
   border-top: 5px lightgray dashed;
+  width:60%;
+  margin-top:10px;
+  font-size:18px;
 }
 
   a:hover {
