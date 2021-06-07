@@ -113,7 +113,7 @@ window.addEventListener('load',function(){
         postTops.push(Math.floor(post.getBoundClientRect().top)+window.pageYOffset);
 
       });
-      const pagePosition=window.pageYOsset;
+      const pagePosition=window.pageYOffset;
       counter=0;
       postTops.forEach(function(post){if(pagePosition>post){counter++;
       }});
