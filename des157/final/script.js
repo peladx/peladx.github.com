@@ -64,8 +64,7 @@ window.addEventListener('load',function(){
 
   // console.log(posts[0].getBoundingClientRect().top + window.pageYOffset);
   posts.forEach(function(post){
-    postTops.push(Math.floor(post.getBoundingClientRect().top)+window.
-    pageYOffset);
+    postTops.push(Math.floor(post.getBoundingClientRect().top) - 20);
   });
   console.log(postTops);
 
@@ -110,15 +109,16 @@ window.addEventListener('load',function(){
     function resetPagePosition(){
       postTops=[];
       posts.forEach(function(post){
-        postTops.push(Math.floor(post.getBoundClientRect().top)+window.pageYOffset);
+        postTops.push(Math.floor(post.getBoundingClientRect().top)+window.pageYOffset);
 
       });
-      const pagePosition=window.pageYOffset;
+      const pagePosition=window.pageYOffet;
       counter=0;
       postTops.forEach(function(post){if(pagePosition>post){counter++;
       }});
       navLinks.forEach(function(eachLink){eachLink.removeAttribute('class')
       ;});
+      console.log(counter);
       const thisLink=document.querySelector(`nav ul li:nth-child ${counter}) a`);
       thisLink.className='selected';
     }
