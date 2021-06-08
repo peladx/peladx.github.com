@@ -7,12 +7,13 @@ const actionArea=document.getElementById('actions');
 const instructions=document.getElementById('instructions');
 const howtoplay=document.getElementById('howtoplay');
 const close1=document.querySelector(".close1");
-
+//audio
 const cheer = new Audio('media/cheer.wav');
 const dice = new Audio('media/dice.wav');
 cheer.volume = 0.5;
 dice.volume = 0.7;
 
+//images/variables for dice
 const gameData ={
   dice:["media/dice1.png","media/dice2.png","media/dice3.png","media/dice4.png","media/dice5.png","media/dice6.png"],
   players:["player 1","player 2"],
@@ -24,7 +25,7 @@ const gameData ={
   gameEnd:29
 
 };
-
+//instructions
 instructions.addEventListener("click",function(){
   howtoplay.className='showing';
 });
@@ -32,7 +33,7 @@ instructions.addEventListener("click",function(){
 close1.addEventListener("click",function(){
   howtoplay.className='hidden';
 });
-
+//startgame
 startGame.addEventListener("click",function(){
   gameData.index= Math.round(Math.random());
   gameControl.innerHTML='';
@@ -57,6 +58,8 @@ function setUpTurn(){
     throwDice();
   });
 }
+
+//roll dice +actions 
 function throwDice(){
   dice.play();
   actionArea.innerHTML='';
@@ -107,7 +110,7 @@ function throwDice(){
 }
 
 
-
+//player wins ; new game
 function checkWinningCondition(){
   if(gameData.score[gameData.index]>gameData.gameEnd){
     cheer.play();
