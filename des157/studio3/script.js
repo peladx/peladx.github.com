@@ -1,3 +1,5 @@
+(function(){
+
 'use strict';
 const startGame=document.getElementById('startgame');
 const gameControl=document.getElementById('gamecontrol');
@@ -59,7 +61,7 @@ function setUpTurn(){
   });
 }
 
-//roll dice +actions 
+//roll dice +actions
 function throwDice(){
   dice.play();
   actionArea.innerHTML='';
@@ -134,3 +136,5 @@ function showCurrentScore(){
   ${gameData.score[0]}</strong> and <strong>${gameData.players[1]}
   ${gameData.score[1]}</strong></p>`;
 }
+
+})();
