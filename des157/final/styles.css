@@ -25,11 +25,8 @@ h1{
 }
 
 
-#images img{
-  /* position:absolute; */
-/*   left:0; */
-}
 
+/* //animation for top images */
 #images img.top{
   -webkit-animation-name:FadeInOut;
   -webkit-animation-timing-function:ease-in-out;
@@ -154,7 +151,7 @@ article{
 	color: white;
 }
 
-
+/* //timelines squares */
 #squares{
    width: 100px;
    display: flex;
@@ -182,7 +179,7 @@ article{
    height:1em;
 }
 
-
+/* //timeline */
 #timeline{
   font-family: 'Roboto Slab', serif;
   font-size:14px;
@@ -240,7 +237,7 @@ a:hover{
 nav ul{
 	list-style-type:none;
 }
-
+/* //selected nav ul li */
 .selected {
   position: relative;
   padding:20px;

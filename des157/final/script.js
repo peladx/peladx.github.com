@@ -4,7 +4,7 @@
     const squares = document.querySelectorAll('.square');
 
 
-
+//setting up the timeline events with the nav and links
     const navLinks=document.querySelectorAll('nav ul li a');
 
     navLinks.forEach(function(eachLink){
@@ -15,26 +15,7 @@
       eachLink.addEventListener('click',smoothScroll);
     });
 
-    // const counters=document.querySelectorAll('.counter');
-    //
-    // counters.forEach(counter=>{
-    //   counter.innerText='0';
-    //
-    //   const updateCounter=()=>{
-    //
-    //     const target=+counter.getAttribute('data-target');
-    //      const c =+counter.innerText;
-    //      // const increment=target/500;
-    //      if(c<target){
-    //       counter.innerText=c+1;
-    //       setTimeout(updateCounter,1);
-    //     }else{
-    //       counter.innerText=target;
-    //     }
-    //   };
-    //   updateCounter;
-    // });
-
+//smoothscroll
     function smoothScroll(event){
       event.preventDefault();
 
@@ -51,7 +32,7 @@
       // console.log(targetAnchor.getBoundingClientRect().top);
     }
 })();
-
+//for timeline scroll and click on link
 window.addEventListener('load',function(){
   'use strict';
   const navLinks=document.querySelectorAll('nav ul li a');
@@ -105,7 +86,7 @@ window.addEventListener('load',function(){
       },500);
     });
 
-
+//resetting page
     function resetPagePosition(){
       postTops=[];
       posts.forEach(function(post){
