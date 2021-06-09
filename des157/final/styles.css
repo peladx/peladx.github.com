@@ -3,7 +3,7 @@
 }
 
 body{
-	width: 120vh;
+	width: 90vh;
 	height:100%;
 	background-color:#2E2E2E;
   color:white;
@@ -11,7 +11,7 @@ body{
 }
 
 h1{
-  font-size:.95em;
+  font-size:.8em;
   margin-left:4%;
 }
 
@@ -20,7 +20,6 @@ h1{
 #images{
   position: relative;
   width: 350px;
-  height: 350px;
   margin:2px;
   margin-right:10px;
 }
@@ -106,7 +105,7 @@ strong{
 #first p{
 	width:100%;
 	margin-left:2%;
-	font-size:25px;
+	font-size:22px;
 }
 
 #first img{
@@ -145,26 +144,35 @@ article{
 
 }
 
+.rightside ul li {
+	color:white;
+	padding-bottom:10px;
+
+}
+
+.rightside a{
+	color: white;
+}
+
 
 #squares{
    width: 100px;
    display: flex;
-   height:100%;
    flex-direction: column;
 /*    align-items: center; */
    justify-content: flex-end;
    position:fixed;
-   bottom:16%;
-   left: 1.6%;
+   bottom:43%;
+   left: .8%;
 }
 
 #squares div{
-	margin-bottom:73%;
+	margin-bottom:44%;
 
 }
 .square {
    width: 10px;
-   height: 10px;
+   height: 8px;
    background-color: gray;
    margin: 10px;
 }
@@ -176,19 +184,21 @@ article{
 
 
 #timeline{
-/*   min-height: 100vh; */
   font-family: 'Roboto Slab', serif;
-  font-weight: 300;
+  font-size:14px;
+
   color:#D3D3D3;
-  position: relative;
+  position: absolute;
 	z-index: 10;
 }
 
 .timeline_wrapper {
+	position:absolute;
   position: fixed;
-   height: 100%;
+  height:80px;
    padding: 0px;
-   bottom: 60%;
+   top: 160px;
+   left:-1%;
 
    display: flex;
    flex-flow: column nowrap;
@@ -202,7 +212,7 @@ nav ul li {
 /*       display: block; */
       border-left: 2px solid white;
       border-top: 2px solid white;
-      height: 40%;
+      height: 30%;
       width: 20px;
 }
 
@@ -237,6 +247,6 @@ nav ul{
   transition: all 0.3s ease-out;
   margin-bottom: 1em;
   color: white;
-  font-size:2em;
+  font-size:1.5em;
 
 }
