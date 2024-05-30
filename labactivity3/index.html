@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lab Activity 3 - COSW 20</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Forest River Campground Reservation System</h1>
+  </header>
+
+  <main>
+    <img src=camping.jpg alt="camping tents on top of a mountain">
+    <p> Welcome to the Forest River Campground Reservation System. Enjoy your stay at one of our 252 campsites complete with electrical and water hookups for your convenience.</p>
+    <section id="reservation">
+      <form action="confirmation.html" method="post">
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" required><br>
+        <label for="lastname"> Last Name:</label>
+        <input type="text" name="lastname" required><br>
+        <label for="email">Email Address:</label>
+        <input type="email"name="email" required></br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" required></br>
+
+        <label for="dateofstay">Arrival Date:</label>
+        <input type="date" name="dateofstay" required><br>
+
+
+        <label for="howmanydays">Length of Stay</label>
+        <select name="howmanydays" required>
+          <option value="1">1 night</option>
+          <option value="2">2 nights</option>
+          <option value="3">3 nights</option>
+          <option value="4">4 nights</option>
+          <option value="5">5 nights</option>
+          <option value="6">6 nights</option>
+          <option value="7">7 nights</option>
+        </select><br>
+
+        <label for="totalpeople"> Total Guests</label>
+        <input type="number" name="totalpeople" min="1" max="8" required><br>
+
+        <input type="submit">
+        
+      </form>
+      </section>
+  </main>
+
+  
+
+  <footer>
+    <p>&copy; February 2024 by Annette C.</p>
+  </footer>
+</body>
+
+</html>
